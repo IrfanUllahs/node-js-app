@@ -31,7 +31,7 @@ const register = async (req, res, next) => {
     // Check if user already exists
     const existingUser = await User.findOne({ email });
     if (existingUser) {
-      return responseHandler.error(res, 400, 'User already exists with this email');
+      return responseHandler.error(res, 400, 'User already exists with this email *****');
     }
 
     // Create user
